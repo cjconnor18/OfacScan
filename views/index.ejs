@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h1>Hello</h1>
+
+    <form action="/" method="post">
+        <input type="type" name="name" value="name" id="name" />
+        <input type="submit"  value="Submit Search" id="btnSearch"/>
+    </form>
+
+
+<div id="results">
+    <% if(results.length > 0) { %>
+        <% results.forEach( result => { %>
+            <p><%= result %></p>
+        <% }) %>
+    <% } else { %>
+        <p>No results!</p>
+    <% } %>
+</div>
+
+</body>
+</html>
